@@ -1,12 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/shopy-favicon.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Shopy</title>
 </head>
+
 <body>
-    <h1>Website under development</h1>
+    <div id="wrapper">
+
+        <header>
+            <div class="container">
+                <!-- Top Header -->
+                <div class="top_header">
+                    <div class="header_info top_header_info">
+                        <div class="header-email">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="mailto:info@shopy.com" target="_blank">info@shopy.com</a>
+                        </div>
+                        <div class="header-number">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:453-5553-996">453-5553-996</a>
+                        </div>
+                    </div>
+                    <div class="header_social-media">
+                        <a class="header_facebook" href="" target="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                            </svg>
+                        </a>
+                        <a class="header_twitter" href="" target="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 20px;">
+                                <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                            </svg>
+                        </a>
+                        <a class="header_youtuber" href="" target="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 20px;">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <a class="header-instagram" href="" target="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="width: 20px;">
+                                <path
+                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Navigation -->
+                <nav>
+                    <!-- Main Logo -->
+                    <div class="brand_logo">
+                        <a href="">
+                            <img src="assets/images/shopy.png" alt="Shopy" loading="lazy" />
+                        </a>
+                    </div>
+                    <!-- Navigation icons -->
+                    <div class="nav_icons">
+                        <ul class="nav_user_list">
+                            <li class="nav-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <path
+                                        d="M 27 9 C 17.075 9 9 17.075 9 27 C 9 36.925 17.075 45 27 45 C 31.129213 45 34.9263 43.587367 37.966797 41.240234 L 51.048828 54.322266 C 51.952828 55.226266 53.418266 55.226266 54.322266 54.322266 C 55.226266 53.418266 55.226266 51.952828 54.322266 51.048828 L 41.240234 37.966797 C 43.587367 34.9263 45 31.129213 45 27 C 45 17.075 36.925 9 27 9 z M 27 13 C 34.719 13 41 19.281 41 27 C 41 34.719 34.719 41 27 41 C 19.281 41 13 34.719 13 27 C 13 19.281 19.281 13 27 13 z" />
+                                </svg>
+                            </li>
+                            <li class="nav-account">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path
+                                        d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z" />
+                                    <path
+                                        d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z" />
+                                </svg>
+                            </li>
+                            <li class="nav-cart">
+                                <div class="cart_counter">
+                                    <p>100</p>
+                                </div>
+                                <svg viewBox="0 0 16 16" class="bi bi-basket3" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z" />
+                                </svg>
+                            </li>
+                        </ul>
+                        <div class="humburger">
+                            <!-- Humburger Menu -->
+                            <!-- <input type="checkbox" id="humburger_menu" /> -->
+                            <label for="humburger_menu" class="menu-label">
+                                <svg id="humburger_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <form class="nav_search-form" action="" method="get">
+                        <label for="nav-search">Search</label>
+                        <input type="search" id="nav-search" placeholder="Search" />
+                        <label for="nav-search-btn">Button</label>
+                        <input type="button" id="nav-search-btn" value="Search" />
+                    </form>
+                    <ul class="nav_links">
+                        <li class="active"><a href="">Home</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Hot Deals</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <div class="btm_header-details">
+                            <div class="header_info btm_header_info">
+                                <div class="header-email">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <a href="mailto:info@shopy.com" target="_blank">info@shopy.com</a>
+                                </div>
+                                <div class="header-number">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <a href="tel:453-5553-996">453-5553-996</a>
+                                </div>
+                            </div>
+                            <div class="header_social-media">
+                                <a class="header_facebook" href="" target="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="header_twitter" href="" target="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 20px;">
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="header_youtuber" href="" target="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 20px;">
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="header-instagram" href="" target="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="width: 20px;">
+                                        <path
+                                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        <section>
+
+        </section>
+
+        <footer>
+            <div class="footer_contaner container">
+                <div class="col_left">
+                    <div class="footer_logo">
+                        <a href="" rel="noopener noreferrer">
+                            <img src="assets/images/shopy.png" alt="Shopy" loading="lazy" />
+                        </a>
+                    </div>
+                    <p class="copyright">shopy C 2023 . your copy right here</p>
+                </div>
+                <div class="col_center">
+                    <ul class="footer_navlink-row1">
+                        <li class="active">
+                            <a href="" rel="noopener noreferrer">about us</a>
+                        </li>
+                        <li>
+                            <a href="" rel="noopener noreferrer">contact us</a>
+                        </li>
+                        <li>
+                            <a href="" rel="noopener noreferrer">support</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_navlink-row2">
+                        <li>
+                            <a href="" rel="noopener noreferrer">our feed</a>
+                        </li>
+                        <li>
+                            <a href="" rel="noopener noreferrer">terms and conditions</a>
+                        </li>
+                        <li>
+                            <a href="" rel="noopener noreferrer">our privacy</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_navlink-row2">
+                        <li>
+                            <a href="" rel="noopener noreferrer">Join us</a>
+                        </li>
+                        <li>
+                            <a href="" rel="noopener noreferrer">live support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col_right">
+                    <h3>Payment Methods</h3>
+                    <img src="assets/images/payment-icons/visa.svg" alt="visa" loading="lazy">
+                    <img src="assets/images/payment-icons/master.svg" alt="master" loading="lazy">
+                    <img src="assets/images/payment-icons/discover.svg" alt="discover" loading="lazy">
+                    <img src="assets/images/payment-icons/amex.svg" alt="american express" loading="lazy">
+                    <img src="assets/images/payment-icons/rupay.svg" alt="rupay express" loading="lazy">
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
+
 </html>
