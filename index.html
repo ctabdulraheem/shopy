@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Shopy</title>
 </head>
 
@@ -167,9 +168,96 @@
                 </nav>
             </div>
         </header>
-        <section>
 
+        <!-- Banner Slider -->
+        <section class="banner">
+            <div class="container banner_container">
+                <!-- SlideShow 01 -->
+                <div class="banner_slideshow banner_slideshow-fade">
+                    <h2>FULL WINTER KIT</h2>
+                    <p>Half Jacket + Skiny Trousers + Boot leather</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                    <div class="banner_product_details">
+                        <p class="price">Price : 120$</p>
+                        <div class="banner_product-order">
+                            <svg viewBox="0 0 16 16" class="bi bi-basket3" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z">
+                                </path>
+                            </svg>
+                            <a href="" rel="noopener noreferrer">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SlideShow 02 -->
+                <div class="banner_slideshow banner_slideshow-fade">
+                    <h2>FULL Summer KIT</h2>
+                    <p>Half Jacket + Skiny Trousers + Boot leather</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                    <div class="banner_product_details">
+                        <p class="price">Price : 100$</p>
+                        <div class="banner_product-order">
+                            <svg viewBox="0 0 16 16" class="bi bi-basket3" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z">
+                                </path>
+                            </svg>
+                            <a href="" rel="noopener noreferrer">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SlideShow 03 -->
+                <div class="banner_slideshow banner_slideshow-fade">
+                    <h2>Wedding KIT</h2>
+                    <p>Suit + Shirt + Paint + Formal Shoes</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                    <div class="banner_product_details">
+                        <p class="price">Price : 100$</p>
+                        <div class="banner_product-order">
+                            <svg viewBox="0 0 16 16" class="bi bi-basket3" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z">
+                                </path>
+                            </svg>
+                            <a href="" rel="noopener noreferrer">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner Slider Controls -->
+                <div class="banner_controls">
+                    <a class="next_slider" onclick="nextSlide(-1)"></a>
+                    <a class="current_slider active_slider" onclick="nextSlide(1)"></a>
+                    <a class="prev_slider" onclick="prevSlide(1)"></a>
+                </div>
+            </div>
         </section>
+
+
+        <!-- <div class="slidercontainer">
+            <div class="showSlide fade">
+                <div class="content">Slide1 heading</div>
+            </div>
+            <div class="showSlide fade">
+                <div class="content">Slide2 heading</div>
+            </div>
+
+            <div class="showSlide fade">
+                <div class="content">Slide3 heading</div>
+            </div>
+            <div class="showSlide fade">
+                <div class="content">Slide4 heading</div>
+            </div>
+           
+            <a class="left active-slider" onclick="nextSlide(-1)"></a>
+            <a class="right" onclick="nextSlide(1)"></a>
+        </div> -->
+
 
         <footer>
             <div class="footer_contaner container">
@@ -224,11 +312,8 @@
             </div>
 
         </footer>
-    </div>
 
-
-
-    <script type="text/javascript" src="assets/js/script.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 
 </html>

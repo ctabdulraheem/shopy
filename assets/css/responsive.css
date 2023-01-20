@@ -32,6 +32,23 @@
   .nav_user_list li.nav-cart svg {
     margin-right: 45px;
   }
+
+  /* Banner Slider */
+  .banner {
+    height: 600px;
+  }
+  .banner_slideshow h2 {
+    font-size: 42px;
+  }
+  .banner_slideshow p:nth-child(2) {
+    margin-bottom: 18px;
+  }
+  .banner_slideshow p:nth-child(3) {
+    font-size: 16px;
+  }
+  .banner_product_details {
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (min-width: 660px) {
@@ -112,6 +129,37 @@
     display: none;
   }
 
+  /* Banner Slider */
+  .banner {
+    height: 650px;
+    background-size: unset;
+  }
+  .banner_slideshow h2 {
+    font-size: 52px;
+  }
+  .banner_product_details {
+    margin-top: 60px;
+  }
+  /* Banner Controls */
+  .banner_container {
+    flex-direction: row-reverse;
+  }
+  .banner_controls {
+    padding-top: unset;
+    margin-right: 49px;
+  }
+  .banner_controls .next_slider,
+  .banner_controls .current_slider,
+  .banner_controls .prev_slider {
+    display: block;
+    width: 10px;
+    height: 17px;
+    margin: 9px 0px;
+  }
+  .banner_controls .active_slider{
+    margin: 9px 0px;
+    height: 36px;
+  }
   /* Footer */
   .footer_contaner.container {
     display: flex;
@@ -127,7 +175,6 @@
   .col_left {
     margin-right: 5px;
   }
-  
 }
 
 @media only screen and (min-width: 960px) {
@@ -142,6 +189,19 @@
   nav .nav_links li {
     margin-right: 20px;
   }
+
+  /* Banner Slider */
+  .banner {
+    background-position: right;
+  }
+  .banner_container {
+    justify-content: start;
+  }
+  /* Banner Slider Controls */
+  .banner_controls {
+    margin-right: 69px;
+  }
+
 
   /* Footer */
   .col_center ul {
@@ -160,11 +220,14 @@
   .nav_user_list li.nav-account svg {
     margin-right: 35px;
   }
-
+  /* Banner Slider */
+  .banner_controls {
+    margin-right: 89px;
+  }
   /* Footer */
   .col_center ul {
     margin-right: 40px;
-}
+  }
 }
 
 @media only screen and (min-width: 1200px) {
